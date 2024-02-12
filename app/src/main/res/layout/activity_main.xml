@@ -9,73 +9,116 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginBottom="100dp"-->
+<!--        />-->
 
     <ImageView
+        android:id="@+id/icon"
         android:layout_width="160dp"
         android:layout_height="160dp"
+        android:layout_marginBottom="380dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
         android:src="@drawable/icon_account" />
 
     <EditText
         android:id="@+id/username_input"
-        android:id="@+id/password_input"
         android:layout_width="325dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="210dp"
         android:hint="Username"
         android:inputType="text"
-        android:inputType="textPassword"
         android:padding="18dp"
         android:textColor="@color/white"
         android:textColorMint="@colowhite"
         android:textSize="18dp" />
 
-    <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Social Login"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="32dp" />
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="325dp"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Social Login"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="32dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="270dp"
+        android:hint="Password"
+
+        android:inputType="textPassword"
+        android:padding="18dp"
+        android:textColor="@color/white"
+        android:textColorMint="@colowhite"
+
+        android:textSize="18dp"
+
+
+        />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
 
-    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginRight="125dp"
+        android:text="Social Login"
+
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
+        />
+
+
+<!--        <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal">-->
+
+
+<!--    </LinearLayout>-->
 
     <ImageView
         android:id="@+id/facebook_btn"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:layout_margin="16dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="220dp"
         android:src="@drawable/facebook" />
 
     <ImageView
         android:id="@+id/twitter_btn"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="16dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="463dp"
+        android:layout_marginLeft="130dp"
         android:src="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/google_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="463dp"
+        android:layout_marginLeft="230dp"
+        android:src="@drawable/google" />
 
 
 </RelativeLayout>
